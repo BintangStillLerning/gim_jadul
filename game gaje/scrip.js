@@ -242,7 +242,7 @@ function drawGameWon() {
   ctx.fillText('Press Space to Restart', canvas.width / 2, canvas.height / 2 + 20);
 }
 
-//nigga
+
 // Update paddle position
 function updatePaddle() {
   paddle.x += paddle.dx;

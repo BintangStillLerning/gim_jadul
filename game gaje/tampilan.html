@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paddle Ball Game</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap');
+
+   
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+      font-family: 'Roboto', sans-serif;
+      color: #00ffcc;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      user-select: none;
+      padding: 30px;
+    }
+  
+  
+      
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 700;
+      font-size: 3rem;
+      margin-bottom: 0.2em;
+      color: #00ffcc;
+      text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+    }
+
+    #description {
+      max-width: 600px;
+      background: rgba(0, 255, 204, 0.1);
+      border: 2px solid #00ffcc;
+      border-radius: 15px;
+      padding: 15px 25px;
+      margin-bottom: 30px;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      box-shadow: 0 0 15px #00ffcc;
+      text-align: center;
+    }
+    
+    #gameContainer {
+      position: relative;
+      background: #0f3460;
+      border-radius: 25px;
+      box-shadow: 0 0 40px #00ffcc;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 720px;
+      max-width: 90vw;
+    }
+
+    canvas {
+      display: block;
+      border-radius: 20px;
+      background: #16213e;
+      box-shadow: 0 0 30px #00ffcc;
+      width: 700px;
+      height: 600px;
+      
+    }
+
+    /* Responsive styles */
+    @media (max-width: 600px) {
+      #gameContainer {
+        width: 320px;
+        padding: 10px;
+      }
+      canvas {
+        width: 300px;
+        height: 260px;
+      }
+    }
+
+    @media (min-width: 601px) and (max-width: 900px) {
+      #gameContainer {
+        width: 520px;
+        padding: 15px;
+      }
+      canvas {
+        width: 500px;
+        height: 430px;
+      }
+    }
+
+    #controls {
+      margin-top: 20px;
+      font-size: 1rem;
+      color: #00ffcc;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      user-select: none;
+    }
+  
+
+     
+   
+  </style>
+</head>
+<body>
+  <h1>Paddle Ball Game</h1>
+  <div id="description">
+    Welcome to the Paddle Ball Game! Use the left and right arrow keys to move the paddle and keep the glowing ball in play. The ball leaves a fiery trail as it bounces. Try to score as many points as possible by preventing the ball from falling!
+  </div>
+  <div id="gameContainer">
+    <canvas id="gameCanvas" width="700" height="600"></canvas>
+  </div>
+  <div id="controls">
+    Controls: Use <strong>Left Arrow</strong> and <strong>Right Arrow</strong> keys to move the paddle.
+  </div>
+  <script src="scrip.js"></script>
+</body>
+</html>
+    
